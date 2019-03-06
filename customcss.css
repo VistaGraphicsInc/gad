@@ -1,0 +1,12 @@
+/*
+Product alignment/size consistency
+ul.products li.product a img {
+    width: auto !important;
+    height: 240px !important;
+}
+*\
+
+----------------------------------
+
+/*
+*\
