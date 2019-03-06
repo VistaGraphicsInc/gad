@@ -1,12 +1,25 @@
-/*
-Product alignment/size consistency
+/* Product alignment/size consistency *\
 ul.products li.product a img {
     width: auto !important;
     height: 240px !important;
 }
-*\
+
 
 ----------------------------------
 
-/*
-*\
+/* Remove Register Form *\
+.woocommerce form.register {
+	display: none;
+}
+
+/* Remove Registration Header (1 div tag below) *\
+#customer_login > div:nth-child(2) {
+	display: none!important;
+}
+
+/* Finish up with styling *\
+#customer_login > div:first-of-type {
+	margin: 0px auto!important;
+	float: none!important;
+}
+
