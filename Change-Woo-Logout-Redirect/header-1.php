@@ -29,8 +29,8 @@
 									</div>
 								<?php endif; ?>
 								<?php if(is_user_logged_in()) { ?>
-									<div class="sign-out-top"><?php echo esc_html__('Great American Direct ','Great American Direct'); ?> <a href="<?php echo esc_url(home_url()); ?>"><?php echo esc_html__('Signout','wow'); ?></a></div>
-									<!-- replaced <a href="<?php echo wp_logout_url(); ?>">< with home url (ABOVE) --joe -->
+									<div class="sign-out-top"><?php echo esc_html__('Great American Direct ','Great American Direct'); ?> <a href="<?php echo esc_url(home_url("/my-account/customer-logout/?_wpnonce=18a5d1707f")); ?>"><?php echo esc_html__('Signout','wow'); ?></a></div>
+									<!-- replaced <a href="<?php echo wp_logout_url(); ?>">< with home_url("/my-account/customer-logout/?_wpnonce=18a5d1707f") (ABOVE) --joe -->
 								<?php }else{ ?>
 									<?php echo wow_login_top(); ?>
 									<div class="sign-up-top">
